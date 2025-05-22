@@ -12,7 +12,9 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
     alert("o email é obrigatorio");
   }
 
-  const mensagemSucesso = document.getElementById("mensagemSucesso");
+  if (nome && email) {
+    const mensagemSucesso = document.getElementById("mensagemSucesso");
 
-  mensagemSucesso.style.display = "block";
+    mensagemSucesso.style.display = "block";
+  }
 });
